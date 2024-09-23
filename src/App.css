@@ -1,0 +1,103 @@
+/* Reset des marges et paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style du corps de l'application */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style du conteneur principal */
+.container {
+  width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style du titre */
+.container h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style du formulaire d'ajout de tâche */
+.add-task-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.add-task-form input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-task-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.add-task-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Style des tâches individuelles */
+.task {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.task span {
+  flex: 1;
+  font-size: 16px;
+}
+
+.task button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.task button:hover {
+  background-color: #c82333;
+}
+
+/* Style du texte barré pour les tâches terminées */
+.task.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
